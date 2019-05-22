@@ -26,13 +26,13 @@ class ChecklistViewController: UITableViewController {
     if let label = cell.viewWithTag(1000) as? UILabel {
       if indexPath.row % 5 == 0 {
         label.text = "Take a jog"
-      } else if indexPath.row % 5 == 1 {
+      } else if indexPath.row % 4 == 0 {
         label.text = "Watch a movie"
-      } else if indexPath.row % 5 == 2 {
+      } else if indexPath.row % 3 == 0 {
         label.text = "Code an app"
-      } else if indexPath.row % 5 == 3 {
+      } else if indexPath.row % 2 == 0 {
         label.text = "Walk the dog"
-      } else if indexPath.row % 5 == 4 {
+      } else if indexPath.row % 1 == 0 {
         label.text = "Study design patterns"
       }
     }
